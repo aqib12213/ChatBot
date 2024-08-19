@@ -68,7 +68,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "flex min-h-screen flex-col items-center bg-background font-sans text-primary antialiased",
+          "flex min-h-screen flex-col items-center bg-background font-sans antialiased",
           GeistSans.variable,
           // fontSans.variable,
         )}
@@ -79,7 +79,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavBar />
           {children}
         </ThemeProvider>
       </body>

@@ -1,18 +1,11 @@
-// "use client";
-
 import { siteConfig } from "config/site";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { Button } from "./ui/button";
 import { ModeToggle } from "./ui/ModeToggle";
 import SignInOrUserAvatar from "./SignInOrUserAvatar";
 
 export default function NavBar() {
-//   const [state, setState] = useState(false);
-
-  // Replace javascript:void(0) path with your path
-  const navigation = [
+    const navigation = [
     { title: "Guides", path: "/mdx-route" },
     { title: "Pricing", path: "/pricing" },
   ];
