@@ -4,7 +4,7 @@ import EllipsisMenus from "./EllipsisMenus";
 
 const ChatBotNaveBar = () => {
   return (
-    <nav className="flex w-full max-w-screen-md items-center justify-between bg-background p-2">
+    <nav className="flex w-full max-w-screen-md items-center justify-between bg-background p-2 shadow-sm">
       <div className="flex items-center justify-center gap-3">
         <Image
           className="size-12 rounded-full border-2 p-1"

@@ -1,6 +1,6 @@
 
 type SendedMessageCompProps = {
-  userId: string;
+  role: string;
   message: string;
   time: string;
   messageId: string;
@@ -11,7 +11,7 @@ const SendedMessageComp = ({
 }: {
   MessageData: SendedMessageCompProps;
 }) => {
-  const { message, time, messageId, userId } = MessageData;
+  const { message, time } = MessageData;
   return (
     <div className="flex items-end justify-end space-x-2">
       <div className="flex flex-col items-end space-y-1">
