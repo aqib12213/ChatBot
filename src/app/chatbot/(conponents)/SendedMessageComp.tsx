@@ -13,7 +13,7 @@ const SendedMessageComp = ({
 }) => {
   const { message, time } = MessageData;
   return (
-    <div className="flex items-end justify-end space-x-2">
+    <div className="flex items-end justify-end space-x-2 max-w-[80%]">
       <div className="flex flex-col items-end space-y-1">
         <div className="rounded-lg bg-blue-500 px-4 py-2 text-white shadow">
           <p>{message}</p>

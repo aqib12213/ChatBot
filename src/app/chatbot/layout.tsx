@@ -1,0 +1,22 @@
+import ChatBotNaveBar from "./(conponents)/ChatBotNaveBar";
+import { X } from "lucide-react";
+
+export default function ChatBotLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className=" h-dvh max-h-dvh min-h-dvh w-full  max-w-screen-md sm:py-4">
+      <div className="relative flex h-full max-h-full flex-col overflow-hidden sm:m-2 sm:rounded-lg sm:border ">
+        <div className="flex h-6 w-full items-center justify-end border-b border-muted px-2">
+          <button className="flex h-6 w-6 items-center justify-center text-muted-foreground hover:text-primary focus:outline-none">
+            <X className="size-4" />
+          </button>
+        </div>
+        <ChatBotNaveBar />
+        {children}
+      </div>
+    </div>
+  );
+}
