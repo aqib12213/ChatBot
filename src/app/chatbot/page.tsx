@@ -46,32 +46,6 @@ export default function Page() {
 
   const [inputValue, setInputValue] = useState("");
 
-  // // handle enter and shiptEnter in textarea
-  // const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-  //   if (e.key === 'Enter') {
-  //     if (!e.shiftKey) {
-  //       e.preventDefault();
-  //       if (inputValue.trim()) {
-  //         const newMessage = {
-  //           role: "user",
-  //           message: inputValue,
-  //           time: new Date().toLocaleTimeString(),
-  //           messageId: Date.now().toString(),
-  //         };
-  //         setMessages([...messages, newMessage]);
-  //         setInputValue("");
-  //         // Here you would typically call a function to get the bot's response
-  //         // and add it to the messages array
-  //       }
-  //     } else {
-  //       // Allow Shift+Enter for new line
-  //       setInputValue(prevValue => prevValue + '\n');
-  //     }
-  //   }
-  // };
-  
-  // Import useRef and useEffect at the top of the file if not already imported
-
   // Add this ref to the component
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -138,7 +112,7 @@ export default function Page() {
         <div className="block h-4 w-full" />
         <ScrollBar orientation="vertical" />
       </ScrollArea>
-      <footer className="absolute bottom-4 flex w-[97%] items-end self-center rounded-[26px] bg-primary px-3 py-2 shadow-sm">
+      <footer className="absolute bottom-4 flex w-[97%] items-end self-center rounded-[26px] bg-primary px-3 py-2 shadow-sm border">
         <PaperclipIcon className="mb-2 h-5 w-5 text-muted-foreground" />
         <textarea
           // type="text"

@@ -8,7 +8,7 @@ const MessageActions = ({ message }: { message: string }) => {
   const [Stared, setStared] = useState(false);
   const isCopied = Boolean(copiedText);
   return (
-    <>
+    <div className="space-x-2">
       <button className="size-4 p-0" onClick={() => copyToClipboard(message)}>
         {isCopied ? (
           <CheckIcon className="h-full w-full" />
@@ -23,7 +23,7 @@ const MessageActions = ({ message }: { message: string }) => {
         />
         <span className="sr-only">Stared message</span>
       </button>
-    </>
+    </div>
   );
 };
 

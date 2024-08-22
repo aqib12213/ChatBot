@@ -6,12 +6,12 @@ import SignInOrUserAvatar from "./SignInOrUserAvatar";
 
 export default function NavBar() {
     const navigation = [
-    { title: "Guides", path: "/mdx-route" },
+    { title: "Features", path: "/#features" },
     { title: "Pricing", path: "/pricing" },
   ];
 
   return (
-    <nav className="w-full bg-background">
+    <nav className="w-full bg-gray-900 h-fit">
       <div className="mx-auto max-w-screen-xl items-center px-4 flex md:px-8">
         <div className="flex items-center justify-between py-3 md:block md:py-5">
           <Link href="/">
@@ -25,14 +25,14 @@ export default function NavBar() {
           </Link>
         </div>
         <div
-          className={`flex-1 justify-center items-center`}
+          className={`flex-1 justify-end items-center`}
         >
-          <ul className="items-center justify-center flex gap-2">
+          <ul className="items-center justify-end pr-10 flex gap-2">
             {navigation.map((item, idx) => {
               return (
                 <li
                   key={idx}
-                  className="text-muted-foreground hover:text-primary"
+                  className="text-gray-300 hover:text-gray-100"
                 >
                   <Link href={item.path}>{item.title}</Link>
                 </li>
@@ -41,7 +41,7 @@ export default function NavBar() {
           </ul>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <ModeToggle />
+ 
           <SignInOrUserAvatar />
         </div>
       </div>

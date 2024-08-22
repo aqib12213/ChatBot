@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, User2 } from "lucide-react";
+import { LogOut, MessageCircleMore, User2 } from "lucide-react";
 import SignOutButton from "./SignOutButton";
 
 export default async function SignInOrUserAvatar() {
@@ -25,7 +25,7 @@ export default async function SignInOrUserAvatar() {
             alt={"user " + session.user.name}
             width={60}
             height={60}
-            src={session.user.image  ?? "/favicon.ico"}
+            src={session.user.image ?? "/favicon.ico"}
           />
           <AvatarFallback>
             {session.user.name ? (
@@ -51,6 +51,12 @@ export default async function SignInOrUserAvatar() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="gap-2">
+          <Link href="/chatbot" className="flex items-center gap-2">
+            <MessageCircleMore className="size-4" />
+            Chat bot
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="gap-2">
           {" "}
           <LogOut className="size-4" />{" "}
           <SignOutButton className="flex-1 text-start" />
@@ -60,7 +66,7 @@ export default async function SignInOrUserAvatar() {
   ) : (
     <Link
       href="/api/auth/signin"
-      className={buttonVariants({ variant: "default" })}
+      className={buttonVariants({ variant: "secondary" })}
     >
       SignIn
     </Link>

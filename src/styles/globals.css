@@ -69,8 +69,8 @@
 }
 
 .backgroundImage {
-  background-image: url("/BackgroundPattern.png");
-  background-repeat: repeat-y;
+  background-image: url("/HeroPattern.jpg");
+  background-repeat: repeat-x;
   background-size: cover;
   background-position: top;
 }

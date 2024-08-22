@@ -68,7 +68,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "flex min-h-screen flex-col items-center bg-background font-sans antialiased",
+          "flex min-h-screen flex-col items-center bg-background font-sans antialiased scroll-smooth",
           GeistSans.variable,
           // fontSans.variable,
         )}
