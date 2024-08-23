@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { siteConfig } from "config/site";
 import { GeistSans } from "geist/font/sans";
-import NavBar from "@/components/NavBar";
 
 // import { Inter as FontSans } from "next/font/google";
 

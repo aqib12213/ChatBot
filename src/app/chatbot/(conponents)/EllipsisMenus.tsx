@@ -11,11 +11,9 @@ import {
 import {
   EllipsisVertical,
   LogIn,
-  LogOut,
-  MessageCircleHeart,
-  MessageCircleQuestion,
+  LogOut, MessageCircleQuestion,
   MessageCircleReply,
-  User2,
+  User2
 } from "lucide-react";
 import SignOutButton from "@/components/SignOutButton";
 import Link from "next/link";
