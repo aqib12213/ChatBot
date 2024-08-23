@@ -16,7 +16,7 @@ export default function NavBar() {
           <Link href="/">
             <Image
             className="rounded-lg bg-gray-200 size-10 p-1"
-              src="/bot.png"
+              src="/Bot.png"
               width={40}
               height={40}
               alt={siteConfig.name + " logo"}

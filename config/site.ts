@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "ChatBot",
-    url: "https://ehtisham.dev",
-    ogImage: "https://ehtisham.dev/og.jpg",
+    url: "https://chatbot-sham.vercel.app",
+    ogImage: "https://chatbot-sham.vercel.app/og.webp",
     description: "AI powered chatbot built with Next.jsand Tailwind CSS",
     links: {
         linkedIn: "https://www.linkedin.com/in/ehtisham-afzal/",

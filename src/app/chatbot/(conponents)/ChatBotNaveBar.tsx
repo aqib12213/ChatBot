@@ -8,7 +8,7 @@ const ChatBotNaveBar = () => {
       <div className="flex items-center justify-center gap-3">
         <Image
           className="size-12 rounded-full border-2 p-1"
-          src="/bot.png"
+          src="/Bot.png"
           width={40}
           height={40}
           alt="ChatBot logo"
