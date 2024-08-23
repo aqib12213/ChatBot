@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 export default function Page() {
   const plans = [
@@ -51,6 +53,9 @@ export default function Page() {
 
   return (
     <section className="py-14">
+      <Link href="/" className="flex items-center gap-2">
+          <ArrowLeft className="size-4" /> Home
+      </Link>
       <div className="mx-auto max-w-screen-xl px-4 text-muted-foreground md:px-8">
         <div className="relative mx-auto max-w-xl sm:text-center">
           <h3 className="text-3xl font-semibold text-primary sm:text-4xl">

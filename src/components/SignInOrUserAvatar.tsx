@@ -51,7 +51,7 @@ export default async function SignInOrUserAvatar() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="gap-2">
-          <Link href="/chatbot" className="flex items-center gap-2">
+          <Link href="/chatbot" className="flex flex-1 items-center gap-2">
             <MessageCircleMore className="size-4" />
             Chat bot
           </Link>
@@ -64,10 +64,7 @@ export default async function SignInOrUserAvatar() {
       </DropdownMenuContent>
     </DropdownMenu>
   ) : (
-    <Link
-      href="/api/auth/signin"
-      className={buttonVariants({ variant: "secondary" })}
-    >
+    <Link href="/login" className={buttonVariants({ variant: "secondary" })}>
       SignIn
     </Link>
   );

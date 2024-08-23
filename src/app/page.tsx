@@ -31,7 +31,7 @@ export default function Page() {
                   Features
                 </Link>
                 <Link
-                  href="/api/auth/signin"
+                  href="/login"
                   className={buttonVariants({ variant: "secondary" })}
                 >
                   SignUp
@@ -39,9 +39,9 @@ export default function Page() {
               </div>
               <Image
                 className="mt-12 aspect-auto w-full rounded-lg border-4 border-muted-foreground sm:w-1/2"
-                width={500}
-                height={400}
-                src="/Chatbot-Screenshot.png"
+                width={740}
+                height={600}
+                src="/Chatbot-Screenshot.webp"
                 alt="ChatbotScreenshot"
               />
             </div>
@@ -109,7 +109,7 @@ export default function Page() {
               </div>
               <div className="w-full max-w-sm space-y-2">
               <Link
-                  href="/api/auth/signin"
+                  href="/login"
                   className={buttonVariants({ variant: "secondary" })}
                 >
                   SignUp Now
